@@ -16,3 +16,12 @@ class Rating extends React.Component {
     );
   }
 }
+
+// PropTypes realiza a captura de bugs na checagem de tipos
+Rating.propTypes = { // Iniciando a checagem de tipos das Props
+  movie: PropTypes.shape({
+    rating: propTypes.number, // Eu espero receber uma prop do rating e tem que ser number
+  }).isRequired, // Para torna-los obrigatório
+};
+
+export default Rating; // Sempre exportar o componente
