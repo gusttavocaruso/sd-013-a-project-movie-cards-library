@@ -8,9 +8,13 @@ class MovieList extends React.Component {
     const { movies } = this.props;
 
     return (
-      <div>
-        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
-      </div>);
+      <main>
+        <h2 className="page-subtitle">Best Movies of The Week</h2>
+        <div className="movie-list">
+          {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
+        </div>
+      </main>
+    );
   }
 }
 
