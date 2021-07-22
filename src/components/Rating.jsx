@@ -11,7 +11,7 @@ class Rating extends React.Component {
         <div>
           Rating
         </div>
-        <div>
+        <div className="rating">
           {rating}
         </div>
       </section>
