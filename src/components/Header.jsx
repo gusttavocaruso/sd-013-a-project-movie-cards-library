@@ -1,4 +1,9 @@
-ogustavomauricio
-// implement Header component here
+import React, { Component } from "react";
 
- master
+class Header extends Component {
+    render() {
+        return()
+    }
+}
+
+export {Header};
