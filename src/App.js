@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <header className="movie-card-header"><Header /></header>
         <MovieList movies={ data } />
       </div>
     );
