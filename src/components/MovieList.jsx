@@ -12,7 +12,8 @@ class MovieList extends React.Component {
     // Renderizo abaixo a props movies enviada pelo App.js que foi desestruturada
     return (
       <section className="movie-list">
-        {/* Toda vez que é realizado o MAP é necessário colocar um KEY, usado internamente para identificar cada item */}
+        {/* Toda vez que é realizado o MAP é necessário colocar um KEY,
+        usado internamente para identificar cada item */}
         { movies.map((movie) => <MovieCard key={ title } movie={ movie } />)}
       </section>
     );
