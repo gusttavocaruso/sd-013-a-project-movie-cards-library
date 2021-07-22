@@ -1,5 +1,6 @@
 // implement Rating component here
 import React from 'react';
+import PropTypes from 'prop-types';
 // import MovieCard from './MovieCard';
 
 class Rating extends React.Component {
@@ -7,7 +8,9 @@ class Rating extends React.Component {
     const { rating } = this.props;
     console.log(rating);
     return (
-      <p>{rating}</p>
+      <h3>
+        {rating}
+      </h3>
 
     );
   }
