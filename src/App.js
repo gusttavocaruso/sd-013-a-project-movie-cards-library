@@ -7,10 +7,10 @@ import data from './data';
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <header className="movie-card-header"><Header /></header>
+      <main>
+        <Header />
         <MovieList movies={ data } />
-      </div>
+      </main>
     );
   }
 }

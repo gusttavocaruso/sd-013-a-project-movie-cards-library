@@ -35,6 +35,7 @@ body {
   margin: 5px;
   overflow: hidden;
   width: 300px;
+  justify-content: space-between;
 }
 
 
@@ -51,6 +52,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
+  padding: 10px;
 }
 
 .movie-card-subtitle {
@@ -58,11 +60,13 @@ body {
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 8px;
+  padding: 10px;
 }
 
 .movie-card-storyline {
   font-size: 14px;
   text-align: justify;
+  padding: 10px;
 }
 
 .rating {
@@ -75,7 +79,7 @@ body {
 }
 
 .movie-card-rating {
-  /* background-color: rgba(0, 0, 0, 0.03); */
+  background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
