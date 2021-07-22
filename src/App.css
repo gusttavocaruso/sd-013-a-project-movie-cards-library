@@ -38,6 +38,7 @@ body {
   border-radius: 30px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   height: 450px;
   margin: 5px;
   overflow: hidden;
@@ -58,7 +59,7 @@ body {
   align-self: center;
   font-size: 24px;
   font-weight: 500;
-  margin: 0 0 12px;
+  margin: 5px 0 12px;
 }
 
 .movie-card-subtitle {
