@@ -24,3 +24,16 @@ class MovieCard extends React.Component {
     );
   }
 }
+
+// PropTypes realiza a captura de bugs na checagem de tipos
+MovieCard.propTypes = { // Iniciando a checagem de tipos das Props
+  movie: PropTypes.shape({
+    title: PropTypes.string, // Eu espero receber uma prop do title e tem que ser string
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: propTypes.string,
+    rating: propTypes.number,
+  }).isRequired, // Para torna-los obrigatório
+};
+
+export default MovieCard; // Sempre exportar o componente
