@@ -2,6 +2,7 @@
 https://reactjs.org/docs/typechecking-with-proptypes.html#default-prop-values
 implement MovieCard component here */
 import React from 'react';
+import Rating from './Rating';
 // import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
@@ -14,6 +15,7 @@ class MovieCard extends React.Component {
         <h4 className="movie-card-title">{ title }</h4>
         <h5 className="movie-card-subtitle">{ subtitle }</h5>
         <p className="movie-card-storyline">{ storyline }</p>
+        <Rating />
       </div>
     );
   }
