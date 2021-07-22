@@ -1,1 +1,21 @@
-// implement MovieList component here
+import React from 'react';
+import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
+
+class MovieList extends React.Component {
+  render() {
+    const { movies } = this.props;
+    // descobri que ao não usar destructuring, a função map dá um erro.
+    return (
+      <div className="main">
+        { movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
+      </div>
+    );
+  }
+}
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
+
+export default MovieList;

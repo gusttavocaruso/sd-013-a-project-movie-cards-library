@@ -81,3 +81,32 @@ body {
   justify-content: flex-end;
   padding: 12px 20px;
 }
+
+h1 {
+  text-align: center;
+}
+
+.movieContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 10px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border:black solid 4px;
+  padding: 3px;
+}
+
+.movieContainer img {
+  max-height: 250px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
