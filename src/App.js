@@ -7,7 +7,7 @@ import data from './data';
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Header />
         <MovieList movies={ data } />
       </div>
