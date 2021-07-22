@@ -1,4 +1,7 @@
+/* feito com a ajuda das mulheres da Turma 13 A - Jaqueline Silva, Vanessa Rios, Debora Teodorico, Juliane Marques, Heleny Flavia, Julia Baptista, Aline Eiko Hoshino, Elaine Moreira, Luiza Antiques, Sthefany Caroline, Jessica Queiroz, Lanai Conceicao e tambem Pedro Delicoli. */
 import React from 'react';
+import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
@@ -10,9 +13,20 @@ class MovieCard extends React.Component {
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
+        <Rating rating={ rating } />
       </section>
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    imagePath: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+  }).isRequired,
+};
 
 export default MovieCard;

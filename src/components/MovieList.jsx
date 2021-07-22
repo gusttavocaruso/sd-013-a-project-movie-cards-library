@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+/* feito com a ajuda das mulheres da Turma 13 A - Jaqueline Silva, Vanessa Rios, Debora Teodorico, Juliane Marques, Heleny Flavia, Julia Baptista, Aline Eiko Hoshino, Elaine Moreira, Luiza Antiques, Sthefany Caroline, Jessica Queiroz, Lanai Conceicao e tambem Pedro Delicoli. */
 import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
