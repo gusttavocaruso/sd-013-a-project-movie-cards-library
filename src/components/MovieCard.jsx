@@ -9,11 +9,11 @@ class MovieCard extends Component {
 
     return (
       <div>
-        <img src={ imagePath } alt="Imagem do filme" />
+        <img src={imagePath} alt="Imagem do filme" />
         <h4>{title}</h4>
         <h5>{subtitle}</h5>
         <p>{storyline}</p>
-        <Rating rating={ rating } />
+        <Rating rating={rating} />
       </div>
     );
   }
@@ -24,7 +24,7 @@ MovieCard.propTypes = {
     title: Proptypes.string,
     subtitle: Proptypes.string,
     storyline: Proptypes.string,
-    rating: Proptypes.string,
+    rating: Proptypes.number,
     imagePath: Proptypes.string,
   }).isRequired,
 };
