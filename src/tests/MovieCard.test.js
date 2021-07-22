@@ -57,7 +57,7 @@ describe('9 - Renderize o subtítulo do filme dentro de uma tag `h5`', () => {
   const movie = movies[0];
   it('Renderize o subtítulo do filme dentro de uma tag `h5`', () => {
     wrapper = shallow(<MovieCard movie={ movie } />);
-    expect(wrapper.find('h5').text()).toBe('Movie Subt.skiple 1');
+    expect(wrapper.find('h5').text()).toBe('Movie Subtitle 1');
   });
 });
 
