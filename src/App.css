@@ -32,8 +32,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 450px;
-  margin: 5px;
   justify-content: space-between;
+  margin: 5px;
   overflow: hidden;
   width: 300px;
 }
