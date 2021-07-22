@@ -1,5 +1,6 @@
 // implement MovieList component here
 import React, { Component } from 'react';
+// import MovieCard from './MovieCard';
 // import PropTypes from 'prop-types';
 
 class MovieList extends Component {
@@ -8,7 +9,7 @@ class MovieList extends Component {
 
     return (
       <div>
-        {/* {movies.map((movie) => <h1>movie</h1>)} */}
+        Movie List
       </div>
     );
   }
