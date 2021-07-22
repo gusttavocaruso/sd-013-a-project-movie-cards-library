@@ -4,32 +4,40 @@ import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
-    const {
+    const { movie: {
       imagePath,
       title,
       subtitle,
       storyline,
-      rating } = this.props;
+      rating } } = this.props;
 
     return (
-      <section>
-        <img src={ imagePath } alt={ title } />
-        <h4>{title}</h4>
-        <h5>{subtitle}</h5>
-        <p>{storyline}</p>
-        {/* <h2>{this.props.rating}</h2> */}
-        <Rating rating={ rating } />
-      </section>
+      <div className="movie-card">
+        <section className="movie-card-body">
+          <img className="movie-card-image" src={ imagePath } alt={ title } />
+          <h4 className="movie-card-title">{title}</h4>
+          <h5 className="movie-card-subtitle">{subtitle}</h5>
+          <p className="movie-card-storyline">{storyline}</p>
+          {/* <h2>{this.props.rating}</h2> */}
+          <Rating rating={ rating } />
+        </section>
+      </div>
     );
   }
 }
 
 MovieCard.propTypes = {
-  imagePath: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  storyline: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
+  movie: PropTypes.arrayOf(PropTypes.shape({
+    imagePath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+  })),
+};
+
+MovieCard.defaultProps = {
+  movie: [],
 };
 
 export default MovieCard;
