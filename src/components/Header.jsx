@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class Header extends React.Component {
+class Header extends Component {
   render() { // Chama o método para renderizar, criando o próprio método render
     return ( // O return tem que retornar um HTML
-      <header className="movie-card-header">
+      <header>
         <h1 className="page-title">Movie Cards Library</h1>
       </header>
     );
