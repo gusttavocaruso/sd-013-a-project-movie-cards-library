@@ -6,12 +6,15 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
+      const { movie } = this.props;
     return (
-      <section>
-        <p>teste</p>
-      </section>
+      <div>
+        <img className="movie-card-image" src={ movie.imagePath } alt={ movie.title } />
+      </div>
     );
   }
 }
+
+
 
 export default MovieCard;
