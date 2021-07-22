@@ -11,13 +11,9 @@ class Rating extends React.Component {
 }
 
 Rating.propTypes = {
-  rating: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
+  rating: PropTypes.shape({
     rating: PropTypes.number,
-    imagePath: PropTypes.string,
-  })),
+  }),
 };
 
 Rating.defaultProps = {
