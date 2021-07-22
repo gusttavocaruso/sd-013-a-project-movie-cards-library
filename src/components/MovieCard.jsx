@@ -1,1 +1,1 @@
-import React from 'react';
+// implement MovieCard component here
