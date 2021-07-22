@@ -6,11 +6,11 @@ class MovieCard extends Component {
 
     return(
       <li>
+        <img src={imagePath} alt={title} />
         {title}, 
         {subtitle}, 
         {storyline}, 
-        {rating}, 
-        {imagePath}
+        {rating}
       </li>
     );
   }
