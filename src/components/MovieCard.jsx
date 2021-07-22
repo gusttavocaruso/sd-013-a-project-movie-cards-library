@@ -2,8 +2,8 @@
 https://reactjs.org/docs/typechecking-with-proptypes.html#default-prop-values
 implement MovieCard component here */
 import React from 'react';
-import Rating from './Rating';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
@@ -15,24 +15,24 @@ class MovieCard extends React.Component {
         <h4 className="movie-card-title">{ title }</h4>
         <h5 className="movie-card-subtitle">{ subtitle }</h5>
         <p className="movie-card-storyline">{ storyline }</p>
-        <Rating rating={ rating }/>
+        <Rating rating={ rating } />
       </div>
     );
   }
 }
 
 MovieCard.propTypes = {
-    movie: PropTypes.shape({
-      imagePath: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      subtitle: PropTypes.string.isRequired,
-      storyline: PropTypes.string.isRequired,
-      rating: PropTypes.number,
-    }),
-  };
+  movie: PropTypes.shape({
+    imagePath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number,
+  }),
+};
   
 MovieCard.defaultProps = {
-    movie: { },
+  movie: { },
 };
 
 export default MovieCard;
