@@ -17,22 +17,21 @@ class MovieCard extends React.Component {
           src={ movie.imagePath }
           alt={ movie.title }
         />
+        <hr className="h-rule" />
         <div className="movie-info">
-          <p>
-            <strong>Title:</strong>
-            {' '}
-            {movie.title}
-          </p>
-          <p>
-            <strong>Subtitle:</strong>
-            {' '}
-            {movie.subtitle}
-          </p>
-          <p>
-            <strong>Storyline:</strong>
-            {' '}
-            {movie.storyline}
-          </p>
+          <span>
+            <h4>{movie.title}</h4>
+          </span>
+          <span className="subtitle">
+            <h5>
+              {movie.subtitle}
+            </h5>
+          </span>
+          <span>
+            <p>
+              {movie.storyline}
+            </p>
+          </span>
           <Rating rating={ movie.rating } />
         </div>
       </div>
