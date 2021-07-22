@@ -10,4 +10,8 @@ class Header extends Component {
   }
 }
 
+<<<<<<< HEAD
 export default Header;
+=======
+export default Header
+>>>>>>> 62041be54e16636b13d2cbec404ded29745e2834
