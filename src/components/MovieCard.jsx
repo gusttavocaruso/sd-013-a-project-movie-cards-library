@@ -3,7 +3,7 @@ import React from 'react';
 class MovieCard extends React.Component {
   render() {
     return (
-      <h1>Renderiza algo</h1>
+      <h1>Vai renderizar aqui</h1>
     );
   }
 }
