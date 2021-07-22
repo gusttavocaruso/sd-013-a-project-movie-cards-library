@@ -1,9 +1,9 @@
-// import React from 'react';
+import React from 'react';
 
-// function MovieList () {
-//   return (
+function MovieList () {
+  return (
 
-//   );
-// }
+  );
+}
 
-// export default MovieList;
+export default MovieList;
