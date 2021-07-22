@@ -1,6 +1,7 @@
 // implement MovieList component here
 import React, { Component } from 'react';
 import MovieCards from './MovieCard'
+import PropTypes from 'prop-types';
 
 
 class MovieList extends Component {
@@ -14,4 +15,9 @@ class MovieList extends Component {
         );
     }
 }
+// MovieList.prototype = {
+//     movies: Prototype.shape({
+
+//     })
+// }
 export default MovieList;
