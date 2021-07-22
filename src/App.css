@@ -1,31 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap') ;
 
-@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap') ;
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap') ;
 
 body {
-  background-color: 	white;
+  background-color: white;
   box-sizing: border-box;
-  font-family: 'Overlock SC', cursive;
+  font-family: Overlock SC , cursive;
   font-size: 16px;
 }
 
 .movie-card-header {
   align-items: center;
-  background-color:	skyblue;
+  background-color: skyblue;
   display: flex;
+  font-family: Yomogi , cursive;
   height: 120px;
-  font-family: 'Yomogi', cursive;
   justify-content: center;
 }
 
 .page-title {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
   color: #f8f9fa;
   font-size: 28px;
   font-weight: 500;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
   text-align: center;
 }
 
@@ -84,9 +84,9 @@ body {
   background-color: steelblue;
   border-radius: 10px;
   color: white;
+  font-family: Merriweather , serif;
   font-size: 16px;
   font-weight: 700;
-  font-family: 'Merriweather', serif;
   padding: 3px 9px;
 }
 
