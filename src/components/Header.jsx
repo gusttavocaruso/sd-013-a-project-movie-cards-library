@@ -1,4 +1,3 @@
-juliane-marques-movie-cards-library
 // implement Header component here
 import React from 'react';
 
