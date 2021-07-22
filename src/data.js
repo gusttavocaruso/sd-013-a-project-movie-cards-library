@@ -37,4 +37,3 @@ const movies = [
 ];
 
 export default movies;
-//setup
