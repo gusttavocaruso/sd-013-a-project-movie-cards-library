@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
+import '../App.css';
 
-const Header = () => (
-  <div>
-    <h1>Movie Cards Library</h1>
-  </div>
-);
+class Header extends Component {
+  render() {
+    return (
+      <header className="movie-card-header">
+        <h1>Movie Cards Library</h1>
+      </header>
+    );
+  }
+}
 
 export default Header;
