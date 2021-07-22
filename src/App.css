@@ -1,83 +1,65 @@
-body {
-  background-color: whitesmoke;
-  box-sizing: border-box;
-  font-size: 16px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.movie-card-header {
-  align-items: center;
-  background-color: #343a40;
-  display: flex;
-  height: 100px;
-  justify-content: center;
-}
-
-.page-title {
-  color: #f8f9fa;
-  font-size: 28px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.movie-list {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 48px 30px;
-}
-
-.movie-card {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  height: 450px;
-  margin: 5px;
-  overflow: hidden;
-  width: 300px;
-}
-
-
-.movie-card-image {
+.App {
   width: 100%;
 }
 
-.movie-card-body {
-  flex: 1 1 auto;
+.container-header {
+  background-color: gray;
+  margin-bottom: 20px;
   padding: 20px;
+  text-align: center;
 }
 
-.movie-card-title {
-  font-size: 24px;
-  font-weight: 500;
-  margin: 0 0 12px;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
 }
 
-.movie-card-subtitle {
-  color: #6c757d;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0 0 8px;
+.card {
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  max-width: 400px;
+  padding: 10px;
 }
 
-.movie-card-storyline {
-  font-size: 14px;
-  text-align: justify;
+.card img {
+  max-width: 400px;
+}
+
+.card h4 {
+  font-size: 2rem;
+}
+
+.card h5 {
+  color: gray;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.card p {
+  border-bottom: 1px dotted lightgrey;
+  border-top: 1px dotted lightgrey;
+  height: 120px;
+  margin-top: 30px;
+  padding: 10px 0;
 }
 
 .rating {
-  background-color: #007bff;
-  border-radius: 25px;
+  align-self: flex-end;
+  background-color: blue;
+  border-radius: 5px;
   color: white;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 3px 9px;
-}
-
-.movie-card-rating {
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
-  display: flex;
-  justify-content: flex-end;
-  padding: 12px 20px;
+  display: block;
+  margin-top: 20px;
+  padding: 5px;
+  text-align: center;
+  width: 40px;
 }
