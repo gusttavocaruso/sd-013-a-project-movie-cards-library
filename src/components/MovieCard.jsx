@@ -4,10 +4,16 @@ import React, { Component } from 'react';
 
 class MovieCard extends Component {
   render() {
-    const { movie } = this.props;
+    // const { movie } = this.props;
+    const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
       <div>
-        {movie.title}
+        {title}
+        {subtitle}
+        {storyline}
+        {rating}
+        {imagePath}
+        <img src={ imagePath } alt="" />
       </div>
     );
   }
