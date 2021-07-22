@@ -7,8 +7,8 @@ import movies from './data';
 function App() {
   return (
     <>
-      <Header header={ 'Movie Cards Library' } />
-      <MovieList movies={ movies }/>
+      <Header header="Movie Cards Library" />
+      <MovieList movies={ movies } />
     </>
   );
 }
