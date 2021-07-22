@@ -34,8 +34,8 @@ body {
   height: 450px;
   margin: 5px;
   overflow: hidden;
-  width: 300px;
   justify-content: space-between;
+  width: 300px;
 }
 
 
@@ -65,8 +65,8 @@ body {
 
 .movie-card-storyline {
   font-size: 14px;
-  text-align: justify;
   padding: 10px;
+  text-align: justify;
 }
 
 .rating {
