@@ -25,6 +25,16 @@ body {
   padding: 48px 30px;
 }
 
+.rating-test {
+  display: flex;
+}
+
+.rating-test p{
+  margin: 0px 10px;
+  text-align: center;
+  vertical-align: center;
+}
+
 .movie-card {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -78,6 +88,6 @@ body {
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 12px 20px;
 }
