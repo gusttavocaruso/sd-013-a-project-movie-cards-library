@@ -6,6 +6,8 @@ class MovieCard extends Component {
     // const { title } = movies;
     return (
       <div>
+        <h4>{title}</h4>
+        <h5>{ subtitle }</h5>
         <img src={ imagePath } alt={ title } />
         <p>{ title }</p>
         <p>{ subtitle }</p>
