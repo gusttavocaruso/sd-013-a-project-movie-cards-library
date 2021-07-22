@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
+import Header from './components/Header';
 
-function App() {
-  return (
-    <div className="App">
-      {/* Sua implementação deve ficar aqui. Remova essas duas linhas e mão na massa */}
-     Pedro
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="movie-card-header">
+          <h1 className="page-title"><Header /></h1>
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
