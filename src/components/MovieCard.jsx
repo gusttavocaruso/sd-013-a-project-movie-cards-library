@@ -1,15 +1,17 @@
 import React from 'react';
 import MovieList from './MovieList';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
     render (){
-        const { movies } = this.props;
-        const lista =  movies.map((movie, index )=> <MovieList key={index} movie={movie} />)
+        const { movie: {title, subtitle, imagePath, rating, storyline} } = this.props;
        return(
-           <div>
-            <MovieCard movie={ movie } />
-            <p>{lista}</p>
-        </div>
+           <section>
+               <img src={imagePath} alt={title} />
+               <h4>{title}</h4>
+               <h5>{subtitle}</h5>
+               <p>{storyline}</p>
+           </section>
        )
        
     }

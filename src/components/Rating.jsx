@@ -5,8 +5,12 @@ class Rating extends React.Component {
         const {rating} = this.props
         const nota = rating.map((movie) => movie.rating)
        return(
-           movies.map((movie) => movie.rating)
-
+           <section>
+           <div> rating </div>
+           <div className='rating'>
+               {rating}
+           </div>   
+           </section>
        )
     }
 }
