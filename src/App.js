@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
 import movies from './data';
-// eslint-disable-next-line import/no-cycle
-
 import MovieList from './components/MovieList';
 import Header from './components/Header';
 

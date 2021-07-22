@@ -1,18 +1,22 @@
 import React from 'react';
+import PropsTypes from 'prop-types';
 
 class Rating extends React.Component {
-    render (){
-        const {rating} = this.props
-        const nota = rating.map((movie) => movie.rating)
-       return(
-           <section>
-           <div> rating </div>
-           <div className='rating'>
-               {rating}
-           </div>   
-           </section>
-       )
-    }
+  render() {
+    const { rating } = this.props;
+    return (
+      <section className="movie-card-rating">
+        <div> Rating </div>
+        <div className="rating">
+          {rating}
+        </div>
+      </section>
+    );
+  }
 }
+
+Rating.propTypes = {
+  rating: PropsTypes.number.isRequired,
+};
 
 export default Rating;
