@@ -1,1 +1,1 @@
-// implement Rating component 
+// Para passar no lint
