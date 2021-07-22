@@ -1,4 +1,3 @@
-<<<<<<< andre-leme-movie-cards-library
 import React, { Component } from 'react';
 
 class Header extends Component {
@@ -12,5 +11,3 @@ class Header extends Component {
 }
 
 export default Header;
-=======
->>>>>>> master
