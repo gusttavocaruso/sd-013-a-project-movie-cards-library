@@ -30,7 +30,7 @@ MovieCard.propTypes = {
     rating: PropTypes.number,
   }),
 };
-  
+
 MovieCard.defaultProps = {
   movie: { },
 };
