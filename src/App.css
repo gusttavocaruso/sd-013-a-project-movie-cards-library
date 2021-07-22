@@ -38,6 +38,7 @@ body {
   border-radius: 30px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   height: 450px;
   justify-content: space-evenly;
   margin: 5px;
