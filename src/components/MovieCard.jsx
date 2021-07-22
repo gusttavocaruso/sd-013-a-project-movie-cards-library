@@ -1,34 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 
-class MovieList extends React.Component {
+class MovieCard extends React.Component {
   render() {
-    const { movies: { title, subtitle, storyline, imagePath } } = this.props; // https://stackoverflow.com/questions/53712796/must-use-destructuring-props-assignment
+    const { movie: { title, subtitle, storyline, imagePath, rating } } = this.props; // https://stackoverflow.com/questions/53712796/must-use-destructuring-props-assignment
     return (
       <div>
         <img src={ imagePath } alt={ title } />
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
+        <Rating rating={ rating } />
       </div>
     );
   }
 }
 
-MovieList.defaultProps = {
-  movies: [],
+MovieCard.defaultProps = {
   title: 'filme',
   subtitle: 'subtitle',
   storyline: 'storyline',
   imagePath: 'thumbnail',
 };
 
-MovieList.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.string), // https://stackoverflow.com/questions/41771217/react-linter-airbnb-proptypes-array
+MovieCard.propTypes = {
+  movie: PropTypes.objectOf(PropTypes.object).isRequired,
   title: PropTypes.string,
   subtitle: PropTypes.string,
   storyline: PropTypes.string,
   imagePath: PropTypes.string,
 };
 
-export default MovieList;
+export default MovieCard;
