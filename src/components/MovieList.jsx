@@ -6,7 +6,7 @@ class MovieList extends Component {
   render() {
     return (
       <div>
-        { movies.map((menu) => <MovieCard key={ menu.rating } showInfo={ menu } />) }
+        { movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
       </div>
     );
   }
