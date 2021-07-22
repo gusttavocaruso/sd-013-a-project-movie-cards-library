@@ -6,12 +6,10 @@ import './App.css';
 
 function App() {
   return (
-    <main>
+    <div className="App">
       <Header />
-      <section>
-        <MovieList movies={ movies } />
-      </section>
-    </main>
+      <MovieList movies={ movies } />
+    </div>
   );
 }
 
