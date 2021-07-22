@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-class MoveList extends React.Component {
+class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
 
@@ -14,8 +14,8 @@ class MoveList extends React.Component {
   }
 }
 
-MoveList.propTypes = {
+MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-export default MoveList;
+export default MovieList;
