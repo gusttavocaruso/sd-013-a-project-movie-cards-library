@@ -1,15 +1,14 @@
 // // implement MovieCard component here
-// import React from 'react';
-// import PropType from 'prop-types';
-// import Rating from './Rating';
+import React from 'react';
 
-// class MovieCard extends React.Component {
-//   render() {
-//     const { movie=  } = this.props;
-//     return (
-//       <div>
+class MovieCard extends React.Component {
+  render() {
+    return (
+      <section>
+        <p>teste</p>
+      </section>
+    );
+  }
+}
 
-//       </div>
-//     );
-//   }
-// }
+export default MovieCard;
