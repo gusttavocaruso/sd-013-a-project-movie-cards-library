@@ -1,8 +1,6 @@
-ogustavomauricio
 // implement Header component here
 import React, { Component } from 'react';
 
-<<<<<<< HEAD
 class Header extends Component {
   render() {
     return (
@@ -14,6 +12,4 @@ class Header extends Component {
 }
 
 export default Header;
-=======
- master
->>>>>>> 715bb2e8707743f2aa40ca0322963e01f8c1ebae
+
