@@ -21,7 +21,7 @@ class MovieCard extends Component {
     }
 }
 
-MovieCard.prototype = {
+MovieCard.propTypes = {
     movie: PropTypes.arrayOf(PropTypes.shape({
         title: PropTypes.string,
         subtitle: PropTypes.string,

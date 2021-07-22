@@ -15,9 +15,13 @@ class MovieList extends Component {
         );
     }
 }
-// MovieList.prototype = {
-//     movies: Prototype.shape({
-
-//     })
-// }
+MovieList.propTypes = {
+    movies:PropTypes.shape({
+        title: PropTypes.string,
+        subtitle: PropTypes.string,
+        storyline: PropTypes.string,
+        rating: PropTypes.number,
+        imagePath: PropTypes.string
+    }).isRequired,
+}
 export default MovieList;
