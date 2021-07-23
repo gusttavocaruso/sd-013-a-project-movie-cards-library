@@ -7,10 +7,10 @@ body {
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
+  box-shadow: 0 3px 5px black;
   display: flex;
   height: 100px;
   justify-content: center;
-  box-shadow: 0 3px 5px black;
 }
 
 .page-title {
@@ -23,34 +23,33 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
-  justify-content:center;
+  justify-content: center;
   padding: 48px 30px;
 }
 
 .movie-card {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border-radius: 7px;
+  box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.315);
   display: flex;
   flex-direction: column;
   height: auto;
   margin: 5px;
   overflow: hidden;
   width: 300px;
-  border-radius: 7px;
-  box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.315);
 }
 
 .movie-card-image {
+  box-shadow: 0 0 3px black;
   width: 100%;
-  box-shadow: 0px 0px 3px black;
 }
 
 .movie-card-body {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1 1 auto;
   padding: 15px;
 }
 
@@ -78,25 +77,25 @@ body {
 }
 
 .watch-movie {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #e6e6e6;
   border: 0;
   border-radius: 3px;
-  margin-right: 10px;
-  width: 100%;
-  background-color: #e6e6e6;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.24);
-  font-weight: 500;
-  text-decoration-line: none;
   color: gray;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  margin-right: 10px;
+  text-decoration-line: none;
+  width: 100%;
 }
 
 .watch-movie:hover {
   background-color: #268f81;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.438);
-  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.438);
   color: white;
+  cursor: pointer;
 }
 
 .rating {
@@ -105,26 +104,28 @@ body {
   color: white;
   font-size: 16px;
   font-weight: 700;
-  padding: 3px 9px;
   margin: 10px 20px;
+  padding: 3px 9px;
 }
 
 .movie-card-rating {
   background-color: rgba(0, 0, 0, 0.03);
-  display: flex;
-  justify-content: space-between;
+
   /* padding: 12px 20px; */
+
   /* -moz-box-shadow:    inset 0 0 3px #343a4067;
   -webkit-box-shadow: inset 0 0 3px #343a406c;
   box-shadow:         inset 0 0 3px #343a406c; */
-  border-radius:3px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
   max-width: 170px;
 }
 
 .movie-card-rating h6 {
-  margin: 10px 0 10px 10px;
-  font-size: 12px;
-  padding: 5px;
-  font-weight: 500;
   color: #268f81;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 10px 0 10px 10px;
+  padding: 5px;
 }
