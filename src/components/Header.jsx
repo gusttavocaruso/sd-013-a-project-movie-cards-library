@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <header className="movie-card-header">
         <h1 className="page-title">Movie Cards Library</h1>
-        <input className="search-bar" type="text" placeholder="Pesquisar" />
+        <input className="search-bar" type="text" placeholder="Search" />
 
       </header>
     );
