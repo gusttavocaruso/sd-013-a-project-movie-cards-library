@@ -2,18 +2,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
+import ButtonWatch from './ButtonWatch';
 
 class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
-    const { title, imagePath, subtitle, storyline, rating } = movie;
+    const { title, imagePath, subtitle, storyline, rating, link } = movie;
     return (
       <section className="movie-card">
-        <img src={ imagePath } alt={ title } />
-        <h4>{ title }</h4>
-        <h5>{ subtitle }</h5>
-        <p>{ storyline }</p>
-        <Rating rating={ rating } />
+        <img className="movie-card-image" src={ imagePath } alt={ title } />
+        <div className="movie-card-body">
+          <h4 className="movie-card-title">{ title }</h4>
+          <h5 className="movie-card-subtitle">{ subtitle }</h5>
+          <p className="movie-card-storyline">{ storyline }</p>
+          <div className="little-menu">
+            <ButtonWatch weblink={ link } />
+            {/* <button className="watch-movie">Assistir</button> */}
+            <div className="movie-card-rating">
+              <h6>Classificação:</h6>
+              <Rating rating={ rating } />
+            </div>
+          </div>
+        </div>
       </section>
     );
   }
@@ -26,6 +36,7 @@ MovieCard.propTypes = {
     storyline: PropTypes.string,
     rating: PropTypes.number,
     imagePath: PropTypes.string,
+    link: PropTypes.string,
   }),
 };
 
