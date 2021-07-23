@@ -1,72 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');;
 body {
-  background-color: whitesmoke;
+  background-color: #5cb88a;
   box-sizing: border-box;
   font-size: 16px;
 }
 
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background-color: #292b2a;
+  width: 105%;
   display: flex;
   height: 100px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .page-title {
   color: #f8f9fa;
-  font-size: 28px;
-  font-weight: 500;
-  text-align: center;
+  font-family: Lato, sans-serif;
+  position: absolute;
+  left: 40px;
+}
+
+.search-bar {
+  margin-left: 61.4rem;
+  border-radius: 8px;
+  width: 275px;
+  height: 30px;
+  border: none;
 }
 
 .movie-list {
   display: flex;
   flex-flow: row wrap;
   padding: 48px 30px;
+  width: 1270.47px;
+  height: 585px;
+  left: 85px;
+
 }
 
 .movie-card {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  background-color: #c9eedb;
+  border: 1px solid rgba(240, 155, 155, 0.125);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   height: 450px;
+  width: 300px;
   margin: 5px;
   overflow: hidden;
-  width: 300px;
 }
 
 
 .movie-card-image {
   width: 100%;
+  border-radius: 15px;
 }
 
 .movie-card-body {
   flex: 1 1 auto;
-  padding: 20px;
+  padding: 15px;
 }
 
 .movie-card-title {
+  font-family: Lato, sans-serif;
   font-size: 24px;
   font-weight: 500;
-  margin: 0 0 12px;
+  margin: 5px 5px 12px;
 }
 
 .movie-card-subtitle {
+  font-family: Lato, sans-serif;
   color: #6c757d;
   font-size: 16px;
   font-weight: 500;
-  margin: 0 0 8px;
+  margin: 5px 5px 12px;
 }
 
 .movie-card-storyline {
+  font-family: Lato, sans-serif;
   font-size: 14px;
   text-align: justify;
+  margin: 5px 5px 12px;
+
 }
 
 .rating {
-  background-color: #007bff;
+  background-color: #2e0a68d0;
   border-radius: 25px;
   color: white;
   font-size: 16px;
@@ -74,10 +94,19 @@ body {
   padding: 3px 9px;
 }
 
+.assessment {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  margin-left: 130px;
+}
+
 .movie-card-rating {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(235, 21, 21, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin-top: 15px;
   padding: 12px 20px;
 }
