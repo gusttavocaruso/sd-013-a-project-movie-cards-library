@@ -17,7 +17,6 @@ class MovieCard extends React.Component {
           <p className="movie-card-storyline">{ storyline }</p>
           <div className="little-menu">
             <ButtonWatch weblink={ link } />
-            {/* <button className="watch-movie">Assistir</button> */}
             <div className="movie-card-rating">
               <h6>Classificação:</h6>
               <Rating rating={ rating } />
