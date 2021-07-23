@@ -1,11 +1,17 @@
 import React from 'react';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-    // eslint-disable-next-line react/prop-types
     const { movies } = this.props;
     console.log(movies);
-    return <h2>olá</h2>;
+    return (
+      <section>
+        {
+          movies.map((movie) => <MovieCard key={ movie.title } />)
+        }
+      </section>
+    );
   }
 }
 export default MovieList;
