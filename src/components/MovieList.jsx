@@ -5,11 +5,11 @@ import MovieCard from './MovieCard';
 class MovieList extends React.Component {
   render() {
     const { movieData } = this.props;
-    console.log('linha 11', movieData);
+    // console.log('linha 11', movieData);
     return (
       <div className="movie-list">
         { movieData
-          .map((movie, index) => <MovieCard key={ index } movieInfo={ movie } />) }
+          .map((movie, index) => <MovieCard key={ index } movie={ movie } />) }
       </div>
     );
   }
