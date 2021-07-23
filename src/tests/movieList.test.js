@@ -30,24 +30,24 @@ const movies = [
 ];
 
 describe('3 - Crie um componente `<MovieList />`', () => {
-  it.skip('Renderize o componente `<MovieList />`', () => {
-    shallow(<MovieList movies={movies} />);
+  it('Renderize o componente `<MovieList />`', () => {
+    shallow(<MovieList movies={ movies } />);
   });
 });
 
 describe('4 - Renderize componentes `<MovieCard />` dentro de `<MovieList />`', () => {
   let wrapper;
 
-  it.skip('Renderize componentes `<MovieCard />` dentro de `MovieList`', () => {
-    wrapper = shallow(<MovieList movies={movies} />);
+  it('Renderize componentes `<MovieCard />` dentro de `MovieList`', () => {
+    wrapper = shallow(<MovieList movies={ movies } />);
     expect(wrapper.find(MovieCard).length).toEqual(ratingThree);
   });
 });
 
 describe('5 - Passe uma key para cada `<MovieCard />` renderizado', () => {
   let wrapper;
-  it.skip('Passe uma key para cada `<MovieCard />` renderizado', () => {
-    wrapper = mount(<MovieList movies={movies} />);
+  it('Passe uma key para cada `<MovieCard />` renderizado', () => {
+    wrapper = mount(<MovieList movies={ movies } />);
     const movieCards = wrapper.find(MovieCard);
     movieCards.forEach((movieCard, index) => {
       expect(movieCard.key()).toEqual(movies[index].title);
