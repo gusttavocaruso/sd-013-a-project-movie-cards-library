@@ -1,13 +1,19 @@
 import React from 'react';
-import movies from './data';
 
 class MovieCard extends React.Component {
     render() {
+        const {movie} = this.prop
         return (
-          movies.map((move) => )
-        )
-    }
-}
+          <section>
+            <p> {movie.tile}</p>
+            <p> {movie.subtitle}</p>
+          </section>
 
-export default Movie;
+          
+          
+        );
+    };
+}; 
+
+export default MovieCard;
 
