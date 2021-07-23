@@ -34,6 +34,13 @@ const movies = [
     rating: 4.2,
     imagePath: 'images/Resident_Evil_Vendetta.jpg',
   },
+  {
+    title: 'Star Wars',
+    subtitle: 'Episódio III - A Vingança dos Sith',
+    storyline: 'Seduced by promises of power, Anakin draws ever closer to Darth Sidious until he becomes the fearsome Darth Vader. Together they hatch a plan to annihilate the Jedi Knights once and for all.',
+    rating: 5,
+    imagePath: 'images/Star_Wars_III.jpg'
+  },
 ];
 
 export default movies;
