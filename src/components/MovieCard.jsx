@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 // Aonde eu estou organizando os meus dados que la do data: sequencia, oq eu quero de qual forma eu apresento.
 class MovieCard extends React.Component {
@@ -12,7 +13,7 @@ class MovieCard extends React.Component {
         <h5>{subtitle}</h5>
         <p>{storyline}</p>
         <img src={ imagePath } alt={ title } />
-        <p>{rating}</p>
+        <Rating rating={ rating } />
       </div>
     );
   }
