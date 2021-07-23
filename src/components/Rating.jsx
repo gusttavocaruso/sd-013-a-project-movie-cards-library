@@ -6,7 +6,9 @@ class Rating extends React.Component {
     const { ratingData } = this.props;
 
     return (
-      ratingData.map((data) => data.rating)
+      <section className="rating">
+        ratingData.map((data) => data.rating)
+      </section>
     );
   }
 }
