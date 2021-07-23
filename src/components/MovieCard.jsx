@@ -5,7 +5,7 @@ import Rating from './Rating';
 class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
-    // console.log('linha 8 MovieCard',rating, this.props);
+    // console.log('linha 8 MovieCard',movie.rating, this.props);
     return (
       <section className="movie-card">
         <h1>{ movie.title }</h1>
