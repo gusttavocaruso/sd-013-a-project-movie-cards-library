@@ -4,10 +4,15 @@ import PropTypes from 'prop-types';
 class MovieList extends React.Component {
   render() {
     const { movieInfo } = this.props;
+
     return (
       <section className="movie-list">
         <h4>{ movieInfo.title }</h4>
-        <p>{ movieInfo.subtitle }</p>
+        <h5>{ movieInfo.subtitle }</h5>
+        <p>
+          Sinopse:
+          { movieInfo.storyline }
+        </p>
         <img src={ movieInfo.imagePath } alt={ movieInfo.title } />
       </section>
     );

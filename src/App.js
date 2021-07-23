@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
 import movies from './data';
-import MovieList from './components/MovieList';
+import Header from './components/Header';
+import MovieCard from './components/MovieCard';
+import Rating from './components/Rating';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {movies.map((movie) => <MovieList key={ movie.title } movieInfo={ movie } />)}
+      <MovieCard moviesData={ movies } />
+      <Rating ratingData={ movies } />
     </div>
   );
 }
