@@ -31,6 +31,7 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
+  align-content: stretch;
   height: 450px;
   margin: 5px;
   overflow: hidden;
