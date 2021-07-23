@@ -1,4 +1,15 @@
-ogustavomauricio
-// implement Header component here
+import React from 'react';
 
- master
+class Header extends React.Component {
+  render() {
+    return (
+      <main>
+        <header>
+          <h1>Movie Cards Library</h1>
+        </header>
+      </main>
+    );
+  }
+}
+
+export default Header;
