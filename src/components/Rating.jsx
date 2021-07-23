@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
-    const { ratingData } = this.props;
+    const { rating } = this.props;
 
     return (
       <section className="rating">
-        {ratingData.map((data) => data.rating)}
+        {rating.map((data) => data.rating)}
       </section>
     );
   }
 }
 
 Rating.propTypes = {
-  ratingData: PropTypes.arrayOf({
+  rating: PropTypes.arrayOf({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
@@ -24,7 +24,7 @@ Rating.propTypes = {
 };
 
 Rating.defaultProps = {
-  ratingData: [],
+  rating: [],
 };
 
 export default Rating;
