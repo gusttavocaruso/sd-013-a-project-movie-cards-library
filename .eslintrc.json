@@ -1,14 +1,9 @@
 {
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["src"],
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
-    }
-  },
   "root": true,
   "extends": [
-    "trybe-frontend"
+    "trybe-frontend",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
   ]
 }
