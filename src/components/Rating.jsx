@@ -1,4 +1,3 @@
-// implement Rating component here
 import React from 'react';
 import PropTypes from 'prop-types';
 // import MovieCard from './MovieCard';
@@ -8,15 +7,14 @@ class Rating extends React.Component {
     const { rating } = this.props;
     console.log(rating);
     return (
-      <h3>
+      <p>
         {rating}
-      </h3>
-
+      </p>
     );
   }
 }
 Rating.propTypes = {
-  rating: PropTypes.string.isRequired,
+  rating: PropTypes.isRequired,
 };
 
 export default Rating;

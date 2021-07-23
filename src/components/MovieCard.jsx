@@ -11,15 +11,12 @@ class MovieCard extends React.Component {
     return (
       <section>
         <h4>
-          Título:
           {movie.title}
         </h4>
         <h5>
-          Subtítulo:
           {movie.subtitle}
         </h5>
         <p>
-          Sinopse:
           {movie.storyline}
         </p>
         <img src={ movie.imagePath } alt="" />
