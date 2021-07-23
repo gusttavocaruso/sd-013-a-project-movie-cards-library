@@ -8,8 +8,8 @@ class MovieCard extends React.Component {
     // console.log('linha 8 MovieCard',movie.rating, this.props);
     return (
       <section className="movie-card">
-        <h1>{ movie.title }</h1>
-        <p>{ movie.subtitle }</p>
+        <h4>{ movie.title }</h4>
+        <h5>{ movie.subtitle }</h5>
         <Rating rating={ movie.rating } />
         <p>{ movie.storyline }</p>
         <img src={ movie.imagePath } alt={ movie.title } />
