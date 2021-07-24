@@ -22,7 +22,7 @@ class MovieCard extends React.Component {
             {storyline}
           </p>
         </div>
-        <div>
+        <div className="rating">
           <p>
             {' '}
             {rating}
