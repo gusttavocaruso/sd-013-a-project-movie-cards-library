@@ -10,6 +10,16 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <h1 className="result">
+        {' '}
+        <span className="genre">Genre:</span>
+        Anime
+        {' '}
+        <hr className="division" />
+        {' '}
+        Action
+        {' '}
+      </h1>
       <MovieList movies={ movies } />
     </div>
   );
