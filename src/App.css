@@ -6,21 +6,34 @@ body {
 
 .movie-card-header {
   align-items: center;
-  background-color: #DA0037;
+  background-color: #da0037;
   display: flex;
+  font-weight: 900;
   height: 100px;
   justify-content: center;
-  font-weight: 900;
 }
 
-.movie-card:hover{
+.movie-card {
+  background-color: #444;
+  border: 1px solid #da0037;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  margin: 6px;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 40px;
+}
+
+.movie-card:hover {
+  border: 2px solid #da0037;
   opacity: 1.2;
   transform: scale(1.03);
-  border: 2px solid #DA0037;
 }
 
 .page-title {
-  color: #EDEDED;
+  color: #ededed;
   font-size: 38px;
   font-weight: 500;
   text-align: center;
@@ -32,19 +45,6 @@ body {
   padding: 48px 30px;
 }
 
-.movie-card {
-  background-color: #444444;
-  border: 1px solid #DA0037;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  height: 450px;
-  margin: 5px;
-  overflow: hidden;
-  width: 40px;
-  opacity: 0.8;
-  margin: 6px;
-}
 
 
 .movie-card-image {
@@ -60,7 +60,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
-  color: #DA0037;
+  color: #da0037;
 }
 
 .movie-card-subtitle {
@@ -72,12 +72,12 @@ body {
 
 .movie-card-storyline {
   font-size: 14px;
-  text-align: justify;
   color: #c9cbcea1;
+  text-align: justify;
 }
 
 .rating {
-  background-color: #DA0037;
+  background-color: #da0037;
   border-radius: 25px;
   color: white;
   font-size: 16px;
