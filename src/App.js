@@ -1,3 +1,5 @@
+// Arquivo App que renderiza na página web
+
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
@@ -5,6 +7,8 @@ import MovieList from './components/MovieList';
 import Movies from './data';
 
 function App() {
+  // Renderize <Header /> dentro do componente <App />
+  // Renderize <MovieList /> dentro do componente <App />
   return (
     <div className="App">
       <Header />

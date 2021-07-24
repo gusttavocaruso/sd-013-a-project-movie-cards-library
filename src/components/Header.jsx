@@ -1,4 +1,13 @@
+// Arquivo Header que cria a parte visual do Header da página que vai ser renderizado pelo App.js
+
 import React from 'react';
+
+// ===================================
+
+// Requisito 1: Crie um componente <Header />
+// Requisito 2: Renderize um texto no <Header />
+
+// ===================================
 
 class Header extends React.Component {
   render() {

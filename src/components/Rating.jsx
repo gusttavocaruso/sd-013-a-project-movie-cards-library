@@ -1,5 +1,16 @@
+// Arquivo Rating cria visualmente a nota dos filmes, e é chamado no arquivo MovieCard que contém o
+// que vai ser renderizado para cada filme
+
 import React from 'react';
 import PropTypes from 'prop-types';
+
+// ===================================
+
+// Requisito 11: Crie um componente <Rating />
+// Requisito 12: Renderize a nota de um filme dentro de Rating
+// Requisito 14: Passe como prop para o componente <Rating /> o atributo rating
+
+// ===================================
 
 class Rating extends React.Component {
   render() {
