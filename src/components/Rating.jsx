@@ -1,4 +1,4 @@
-// implement Rating component here
+// implement Rating component heree
 import React from 'react';
 import PropTypes from 'prop-types';
 
