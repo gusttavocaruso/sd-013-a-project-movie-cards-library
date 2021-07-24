@@ -55,9 +55,9 @@ body {
 }
 
 .movie-card-title {
+  color: #da0037;
   font-size: 24px;
   font-weight: 500;
-  color: #da0037;
   margin: 0 0 12px;
 }
 
