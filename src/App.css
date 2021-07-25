@@ -10,9 +10,9 @@ body {
   display: flex;
   height: 100px;
   justify-content: center;
-  width: 90vw;
   margin: 15px auto;
-  border-radius: 100px
+  width: 90vw;
+  border-radius: 100px;
 }
 
 .page-title {
@@ -25,26 +25,25 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
-  padding: 30px 30px;
+  padding: 30px;
 }
 
 .movie-card {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   height: 450px;
   margin: 10px;
   overflow: hidden;
   width: 300px;
-  border-radius: 10px;
   cursor: pointer;
 }
 
 .movie-card:hover {
-  transform: scale(1.1);
   margin: 20px;
+  transform: scale(1.1);
 }
 
 .movie-card-image {
