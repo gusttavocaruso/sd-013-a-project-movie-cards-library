@@ -14,7 +14,7 @@ class Rating extends React.Component {
 
 Rating.propTypes = {
   rating: PropTypes.shape({
-    rating: number.isRequired,
+    rating: PropTypes.number.isRequired,
   }),
 };
 

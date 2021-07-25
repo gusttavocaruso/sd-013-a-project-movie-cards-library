@@ -24,7 +24,7 @@ MovieList.propTypes = {
 };
 
 MovieList.defaultProps = {
-  movie: [],
+  movies: [],
 };
 
 export default MovieList;
