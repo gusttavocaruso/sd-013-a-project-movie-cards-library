@@ -2,7 +2,12 @@ import React from 'react';
 
 class Rating extends React.Component {
   render() {
-    return ();
+    const { rating } = this.props;
+    return (
+      <section className="rating">
+        {rating.map((movie) => movie.rating)}
+      </section>
+    );
   }
 }
 
