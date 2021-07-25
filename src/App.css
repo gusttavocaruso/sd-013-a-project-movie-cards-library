@@ -7,11 +7,11 @@ body {
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
+  border-radius: 100px;
   display: flex;
   height: 100px;
   justify-content: center;
   margin: 15px auto;
-  border-radius: 100px;
   width: 90vw;
 }
 
@@ -32,12 +32,12 @@ body {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 10px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   height: 450px;
   margin: 10px;
   overflow: hidden;
-  cursor: pointer;
   width: 300px;
 }
 
