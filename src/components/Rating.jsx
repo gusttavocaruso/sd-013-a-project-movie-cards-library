@@ -6,20 +6,14 @@ class Rating extends React.Component {
     const { rating } = this.props;
     return (
       <section className="rating">
-        {rating.map((movie) => movie.rating)}
+        <h4>{ rating }</h4>
       </section>
     );
   }
 }
 
 Rating.propTypes = {
-  rating: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    rating: PropTypes.number,
-    imagePath: PropTypes.string,
-  })),
+  rating: PropTypes.number,
 };
 
 Rating.defaultProps = {
