@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
-  render () {
+  render() {
     const { movie } = this.props;
 
     return (
