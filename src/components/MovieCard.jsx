@@ -10,4 +10,4 @@ class MovieCard extends React.Component {
   }
 }
 
-export default MovieCard ;
+export default MovieCard;
