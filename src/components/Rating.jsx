@@ -7,9 +7,6 @@ class Rating extends Component {
 
     return (
       <section className="movie-card-rating">
-        <div>
-          <h1>Rating</h1>
-        </div>
         <div className="rating">
           {rating}
         </div>
