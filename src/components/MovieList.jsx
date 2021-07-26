@@ -14,7 +14,20 @@ class MovieList extends React.Component {
 }
 
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
+  movies: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  })),
+};
+
+MovieList.defaultProps = {
+  movies: [],
 };
 
 export default MovieList;
+
+/* Referências: Aula ao vivo 11.2 e vídeo sobre Proptypes disponilzado no Slack pela
+especialista Maitê Marques. */

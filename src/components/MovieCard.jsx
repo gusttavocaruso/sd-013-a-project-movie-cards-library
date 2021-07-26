@@ -23,8 +23,8 @@ MovieCard.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
-    imagePath: PropTypes.string,
     rating: PropTypes.number,
+    imagePath: PropTypes.string,
   }),
 };
 
@@ -33,3 +33,6 @@ MovieCard.defaultProps = {
 };
 
 export default MovieCard;
+
+/* Referências: Aula ao vivo 11.2 e vídeo sobre Proptypes disponilzado no Slack pela
+especialista Maitê Marques. */
