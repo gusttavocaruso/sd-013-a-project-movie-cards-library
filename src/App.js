@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header.jsx'
+import movies from './data';
+import Header from './components/Header';
+import MovieList from './components/MovieList';
+
 function App() {
   return (
     <div className="App">
-      <Header name="Movie Cards Library"/>
+      <Header />
+      <MovieList movies={ movies } />
     </div>
   );
 }
 
 export default App;
-// Teste
