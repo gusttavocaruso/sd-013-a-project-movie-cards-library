@@ -18,7 +18,7 @@ MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-// MovieList.propsTypes = {
+// MovieList.propTypes = {
 //   movies: PropTypes.arrayOf(PropTypes.shape({
 //     title: PropTypes.string,
 //     subtitle: PropTypes.string,
