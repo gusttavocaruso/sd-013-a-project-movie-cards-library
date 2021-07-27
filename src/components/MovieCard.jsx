@@ -16,5 +16,17 @@ class MovieCard extends React.Component {
         <p className="movie-card-storyline">{ storyline }</p>
         <Rating rating={ rating } />
       </section>
-    )
+    );
   }
+}
+
+MovieCard.PropTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.strin,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+    rating: PropTypes.number,
+  }).isRequired,
+};
+export default MovieCard;
