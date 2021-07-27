@@ -9,9 +9,11 @@ class MovieCard extends React.Component {
     return (
       <div className="movie-card">
         <img className="movie-card-image" src={ imagePath } alt={ title } />
-        <h4 className="movie-card-title">{ title }</h4>
-        <h5 className="movie-card-subtitle">{ subtitle }</h5>
-        <p className="movie-card-storyline">{ storyline }</p>
+        <div className="movie-card-body">
+          <h4 className="movie-card-title">{ title }</h4>
+          <h5 className="movie-card-subtitle">{ subtitle }</h5>
+          <p className="movie-card-storyline">{ storyline }</p>
+        </div>
         <Rating rating={ rating } />
       </div>
     );
@@ -35,4 +37,5 @@ MovieCard.defaultProps = {
 export default MovieCard;
 
 /* Referências: Aula ao vivo 11.2 e vídeo sobre Proptypes disponilzado no Slack pela
-especialista Maitê Marques. */
+especialista Maitê Marques.
+Estilo ajustada com a ajuda da aluna Luiza Antiques */
