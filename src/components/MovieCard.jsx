@@ -1,6 +1,6 @@
 // // implement MovieCard component here
 import React from 'react';
-import PropType from 'prop-types';
+import PropTypes from 'prop-types';
 import Rating from './Rating';
 
 class MovieCard extends React.Component {
@@ -22,12 +22,12 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  movie: PropType.shape({
-    imagePath: PropType.string,
-    title: PropType.string,
-    subtitle: PropType.string,
-    storyline: PropType.string,
-    rating: PropType.number,
+  movie: PropTypes.shape({
+    imagePath: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
   }).isRequired,
 };
 
