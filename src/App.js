@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header.jsx';
-import MovieList from './components/MovieList.jsx';
+import Header from './components/Header';
+import MovieList from './components/MovieList';
 import movies from './data';
 
 class App extends React.Component {
@@ -11,7 +11,7 @@ class App extends React.Component {
         {/* Sua implementação deve ficar aqui. Remova essas duas linhas e mão na massa */}
         <Header />
 
-        <MovieList movies = { movies } />
+        <MovieList movies={ movies } />
       </div>
     );
   }
