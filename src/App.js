@@ -4,7 +4,7 @@ import Header from './components/Header';
 import movies from './data';
 import MovieList from './components/MovieList';
 
-function App () {
+function App() {
   return (
     <div className="App">
       <Header />
