@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
@@ -14,5 +14,23 @@ class MovieCard extends React.Component {
     );
   }
 }
+
+MovieCard.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+  })),
+};
+
+MovieCard.defaultProps = {
+  movies: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+  })),
+};
 
 export default MovieCard;
