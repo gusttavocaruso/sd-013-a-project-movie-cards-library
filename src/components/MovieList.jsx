@@ -12,6 +12,7 @@ class MovieList extends React.Component {
   }
 }
 
+// Eduardo me ajudou a concertar meu prop-types
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
