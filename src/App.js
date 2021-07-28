@@ -2,24 +2,21 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
+import movies from './data';
 
 function App() {
-  const filmes = [
-    {
-      id: 1,
-      name: 'Troia',
-    }, {
-      id: 2,
-      name: 'Homem aranha',
-    }, {
-      id: 3,
-      name: 'Coringa',
-    }];
   return (
     <div className="App">
       <Header />
-      {filmes.map(({ name, id }) => (
-        <MovieList key={ id } movies={ name } />
+      {movies.map(({ title, subtitle, storyline, rating, imagePath }) => (
+        <MovieList
+          key={ title }
+          title={ title }
+          subtitle={ subtitle }
+          storyline={ storyline }
+          rating={ rating }
+          imagePath={ imagePath }
+        />
       ))}
     </div>
   );
