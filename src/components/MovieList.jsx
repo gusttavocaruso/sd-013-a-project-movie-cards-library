@@ -1,7 +1,11 @@
 import React from 'react';
 
+
 class MovieList extends React.Component {
-    render() {
-        
-    } 
+  render() {
+    const { moviesData } = this.props; 
+    return;
+  }
 }
+
+export default MovieList;
