@@ -4,7 +4,9 @@ import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
-    const { title, subtitle, storyline, rating, imagePath } = this.props;
+    // Peguei essa dica de declaração da props no git do Emanoel https://github.com/tryber/sd-013-a-project-movie-cards-library/pull/134
+    const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
+
     return (
       <div>
         <img src={ imagePath } width={ 400 } alt="Minha imagem" />
@@ -19,11 +21,7 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  title: PropTypes.arrayOf(PropTypes.object).isRequired,
-  subtitle: PropTypes.arrayOf(PropTypes.object).isRequired,
-  storyline: PropTypes.arrayOf(PropTypes.object).isRequired,
-  rating: PropTypes.arrayOf(PropTypes.object).isRequired,
-  imagePath: PropTypes.arrayOf(PropTypes.object).isRequired,
+  movie: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default MovieCard;
