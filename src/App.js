@@ -8,16 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {movies.map(({ title, subtitle, storyline, rating, imagePath }) => (
-        <MovieList
-          key={ title }
-          title={ title }
-          subtitle={ subtitle }
-          storyline={ storyline }
-          rating={ rating }
-          imagePath={ imagePath }
-        />
-      ))}
+      <MovieList movies={ movies } />
     </div>
   );
 }
