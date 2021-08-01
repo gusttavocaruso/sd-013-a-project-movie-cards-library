@@ -1,17 +1,7 @@
 import React, { Component } from 'react';
+import Rating from './Rating';
 
 class MovieCard extends Component {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     title: '',
-  //     subtitle: '',
-  //     storyline: '',
-  //     imagePath: '',
-  //     rating: '',
-  //   };
-  // }
-
   render() {
     const { movie: { title, subtitle, storyline, imagePath, rating } } = this.props;
 
@@ -21,6 +11,7 @@ class MovieCard extends Component {
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
+        <Rating rating={ rating } />
       </section>
     );
   }

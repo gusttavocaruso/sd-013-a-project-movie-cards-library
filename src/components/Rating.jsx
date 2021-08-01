@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 
 class Rating extends Component {
   render() {
-    // const { movie: { rating } } = this.props;
+    const { rating } = this.props;
 
     return (
-      <p>test</p>
+      <section>
+        <span role="img" aria-label="Star">⭐</span>
+        <p className="rating">
+          { rating }
+        </p>
+      </section>
     );
   }
 }
@@ -13,17 +18,9 @@ class Rating extends Component {
 export default Rating;
 
 // Rating.propTypes = {
-//   subtitle: PropTypes.string,
-//   title: PropTypes.string,
-//   imagePath: PropTypes.string,
-//   storyline: PropTypes.string,
 //   rating: PropTypes.number,
 // };
 
 // Rating.defaultProps = {
-//   subtitle: '',
-//   title: '',
-//   imagePath: '',
-//   storyline: '',
 //   rating: 0,
 // };
