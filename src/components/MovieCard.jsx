@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Rating from './Rating';
 
 class MovieCard extends Component {
@@ -19,18 +20,14 @@ class MovieCard extends Component {
 
 export default MovieCard;
 
-// MovieCard.propTypes = {
-//   subtitle: PropTypes.string,
-//   title: PropTypes.string,
-//   imagePath: PropTypes.string,
-//   storyline: PropTypes.string,
-//   rating: PropTypes.number,
-// };
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    subtitle: PropTypes.string,
+    title: PropTypes.string,
+    imagePath: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+  }),
+};
 
-// MovieCard.defaultProps = {
-//   subtitle: '',
-//   title: '',
-//   imagePath: '',
-//   storyline: '',
-//   rating: 0,
-// };
+MovieCard.defaultProps = { movie: {} };
