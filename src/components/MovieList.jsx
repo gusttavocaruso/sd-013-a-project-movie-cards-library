@@ -17,18 +17,11 @@ class MovieList extends Component {
   }
 }
 
-export default MovieList;
-
+// Refactored based on Project Movie Cards Library Stateful
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.shape({
-    subtitle: PropTypes.string,
-    title: PropTypes.string,
-    imagePath: PropTypes.string,
-    storyline: PropTypes.string,
-    rating: PropTypes.number,
-  })),
+  movies: PropTypes.arrayOf(
+    PropTypes.object,
+  ).isRequired,
 };
 
-MovieList.defaultProps = {
-  movies: {},
-};
+export default MovieList;

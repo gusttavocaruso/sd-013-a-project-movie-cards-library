@@ -18,8 +18,7 @@ class MovieCard extends Component {
   }
 }
 
-export default MovieCard;
-
+// Refactored based on Project Movie Cards Library Stateful
 MovieCard.propTypes = {
   movie: PropTypes.shape({
     subtitle: PropTypes.string,
@@ -27,7 +26,7 @@ MovieCard.propTypes = {
     imagePath: PropTypes.string,
     storyline: PropTypes.string,
     rating: PropTypes.number,
-  }),
+  }).isRequired,
 };
 
-MovieCard.defaultProps = { movie: {} };
+export default MovieCard;

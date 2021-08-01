@@ -16,8 +16,9 @@ class Rating extends Component {
   }
 }
 
-export default Rating;
-
 Rating.propTypes = { rating: PropTypes.number };
 
-Rating.defaultProps = { rating: 0 };
+// Refactored based on Project Movie Cards Library Stateful
+Rating.defaultProps = { rating: 'undefined' };
+
+export default Rating;
