@@ -13,3 +13,13 @@ class MovieList extends Component {
 }
 
 export default MovieList;
+
+// MovieList.propTypes = {
+//   movies: PropTypes.object,
+//   movie: PropTypes.string,
+// };
+
+// MovieList.defaultProps = {
+//   movies: {},
+//   movie: PropTypes.string,
+// };
