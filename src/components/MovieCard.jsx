@@ -14,8 +14,11 @@ class MovieCard extends Component {
 
   render() {
     const { movie } = this.props;
+
     return (
-      <p>oi</p>
+      <section>
+        <img src={ movie.imagePath } alt={ movie.title } />
+      </section>
     );
   }
 }
