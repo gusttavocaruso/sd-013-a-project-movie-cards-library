@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 
 class MovieCard extends Component {
-  constructor() {
-    super();
-    this.state = {
-      title: '',
-      subtitle: '',
-      storyline: '',
-      imagePath: '',
-      rating: '',
-    };
-  }
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     title: '',
+  //     subtitle: '',
+  //     storyline: '',
+  //     imagePath: '',
+  //     rating: '',
+  //   };
+  // }
 
   render() {
-    // movies = this.props;
+    const { movie } = this.props;
     return (
       <p>oi</p>
     );
