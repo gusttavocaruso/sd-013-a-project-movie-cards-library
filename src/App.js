@@ -10,9 +10,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList>
-        <MovieCard />
-      </MovieList>
+      <MovieList />
+      <MovieCard />
       <Rating />
     </div>
   );
