@@ -9,10 +9,9 @@ class MovieCard extends React.Component {
         <h4>
           { movie.title }
         </h4>
-        <p>
-          Subtitle:
+        <h5>
           { movie.subtitle }
-        </p>
+        </h5>
         <p>
           Storyline:
           { movie.storyline }
