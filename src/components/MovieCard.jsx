@@ -13,14 +13,13 @@ class MovieCard extends React.Component {
           { movie.subtitle }
         </h5>
         <p>
-          Storyline:
           { movie.storyline }
         </p>
         <img src={ movie.imagePath } alt={ `Imagem do filme ${movie.title}` } />
-        <p>
+        {/* <p>
           Rating:
           { movie.rating }
-        </p>
+        </p> */}
       </div>
     );
   }
