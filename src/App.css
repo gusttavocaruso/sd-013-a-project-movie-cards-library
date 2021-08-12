@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -20,23 +20,23 @@ body {
 }
 
 .result {
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
   color: #333;
-  font-weight: 300;
   font-size: 28px;
+  font-weight: 300;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
 .genre {
-  margin-right: 10px;
   font-weight: 400;
+  margin-right: 10px;
 }
 
 .division {
   background-color: #adadad;
   display: inline-block;
-  width: 2px;
   height: 20px;
   margin: 0 6px;
+  width: 2px;
 }
