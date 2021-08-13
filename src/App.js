@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
-import Filmes from './data';
+import Data from './data';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
+
+// console.log(Data);
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList xablau={ Filmes } />
+      <MovieList allmovies={ Data } />
     </div>
   );
 }
