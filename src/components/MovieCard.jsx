@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes, { shape } from 'prop-types';
+import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
     const { movie } = this.props;
-    const { imagePath, title, subtitle, storyline } = movie;
+    const { imagePath, title, subtitle, storyline, rating } = movie;
     return (
       <section>
         <img
@@ -12,11 +13,12 @@ class MovieCard extends Component {
           alt={ title }
         />
         <div>
-          <h4>{title}</h4>
-          <h5>{subtitle}</h5>
-          <p>{storyline}</p>
+          <h4>{ title }</h4>
+          <h5>{ subtitle }</h5>
+          <p>{ storyline }</p>
           <div>
             <h6>Classificação:</h6>
+            <Rating rating={ rating } />
           </div>
         </div>
       </section>
