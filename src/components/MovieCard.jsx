@@ -27,15 +27,15 @@ class MovieCard extends React.Component {
   }
 }
 
-MovieCart.PropTypes = {
-  movie: PropTypes.shape({
+MovieCard.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
     rating: PropTypes.number,
     imagePath: PropTypes.string,
     link: PropTypes.string,
-  }),
+  })),
 };
 
 MovieCard.defaultProps = {

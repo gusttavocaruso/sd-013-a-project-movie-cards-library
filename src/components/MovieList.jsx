@@ -15,7 +15,7 @@ class MovieList extends React.Component {
   }
 }
 
-MovieList.PropTypes = {
+MovieList.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
