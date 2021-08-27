@@ -14,7 +14,7 @@ class MovieCard extends React.Component {
           <h4 className="movie-card-title">{ title }</h4>
           <h5 className="movie-card-subtitle">{ subtitle }</h5>
           <p className="movie-card-storyline">{ storyline }</p>
-          <div>
+          <div className="little-menu">
             <ButtonWatch weblink={ link } />
             <div className="movie-card-rating">
               <h6>Classificação:</h6>
@@ -28,18 +28,18 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.shape({
+  movie: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
     rating: PropTypes.number,
     imagePath: PropTypes.string,
     link: PropTypes.string,
-  })),
+  }),
 };
 
 MovieCard.defaultProps = {
-  movies: [],
+  movie: {},
 };
 
 export default MovieCard;
